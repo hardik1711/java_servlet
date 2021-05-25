@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>htsession1</servlet-name>
+        <servlet-class>htsession1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>htsession2</servlet-name>
+        <servlet-class>htsession2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>htsession3</servlet-name>
+        <servlet-class>htsession3</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>htsession4</servlet-name>
+        <servlet-class>htsession4</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>htsession1</servlet-name>
+        <url-pattern>/htsession1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>htsession2</servlet-name>
+        <url-pattern>/htsession2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>htsession3</servlet-name>
+        <url-pattern>/htsession3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>htsession4</servlet-name>
+        <url-pattern>/htsession4</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
