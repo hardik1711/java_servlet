@@ -17,7 +17,7 @@ try{
 Class.forName("com.mysql.jdbc.Driver");  
 Connection con=DriverManager.getConnection(  
 "jdbc:mysql://localhost:3306/hardik","root","");  
-//here sonoo is database name, root is username and password  
+//here hardik is database name, root is username and password is blank 
 Statement stmt=con.createStatement();  
 ResultSet rs=stmt.executeQuery("select * from emp");  
 while(rs.next())  
